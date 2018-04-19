@@ -1,0 +1,38 @@
+body
+    background-image: url("../img/bg.jpg")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+// elems
+nav
+    // position: fixed
+img
+    max-width: 100%
+// materializes classes
+.btn
+    transition: .5 ease-out
+    height: auto
+    &:hover
+        transform: scale(.9)
+    &:active
+        transform: scale(.7)
+// myClasses
+.myCadre 
+    border-radius: 14px
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2)
+// paddings & margins
+.p10
+    padding: 10px
+.mb20
+    margin-bottom: 20px
+// patch
+// .force-ul
+//     list-style: initial
+// mobile
+@media (min-width: 760px)
+    .mobonly
+        display: none
+@media (max-width: 760px)
+    .nomobile
+        display: none

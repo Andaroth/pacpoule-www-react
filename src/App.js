@@ -1,20 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+//elem
+import Navbar from './compos/elem/navbar';
+import Footer from './compos/elem/footer';
+// pages
+import NotFound from './compos/pages/404';
+import Home from './compos/pages/home';
+import Game from './compos/pages/game';
+import Casestudy from './compos/pages/casestudy';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Navbar />
+        <main>
+          <BrowserRouter>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/game" component={Game} />
+              <Route path="/casestudy" component={Casestudy} />
+              <Route component={NotFound} />
+            </Switch>
+          </BrowserRouter>
+        </main>
+        <Footer />
       </div>
     );
-  }
-}
-
-export default App;
+  } // render end
+} // class
