@@ -9,6 +9,14 @@ nav
     // position: fixed
 img
     max-width: 100%
+    border-radius: 4px
+img.minimg
+    max-height: 330px
+iframe
+    border-radius: 3px
+    overflow: hidden
+    max-width: 816px
+    max-height: 624px
 // materializes classes
 .btn
     transition: .5 ease-out
@@ -18,21 +26,37 @@ img
     &:active
         transform: scale(.7)
 // myClasses
+.through
+    pointer-events: none
+.force-ol, .force-ol>li
+    list-style-type: disc !important
 .myCadre 
-    border-radius: 14px
+    border-radius: 8px
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2)
-// paddings & margins
+.myCenter
+    margin-left: auto !important
+    margin-right: auto !important
+// paddings & margins & sizing
+.mxw33
+    max-width: 33%
+.mxw50
+    max-width: 50%
 .p10
     padding: 10px
+.m25
+    margin: 25px
 .mb20
     margin-bottom: 20px
 // patch
 // .force-ul
 //     list-style: initial
-// mobile
+// nomobile
 @media (min-width: 760px)
     .mobonly
         display: none
+// mobile
 @media (max-width: 760px)
     .nomobile
         display: none
+    .myCadre
+        border-radius: 0

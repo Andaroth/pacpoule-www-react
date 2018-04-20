@@ -1,21 +1,28 @@
 import React, { Component } from 'react';
 
+import PicOne from '../../assets/img/gameview_04.png';
+
 export default class NotFound extends Component {
     render() {
         return(
-            <div className="row">
-                <div className="col s12 m6">
-                    <div className="card blue-grey darken-1">
-                        <div className="card-content white-text">
-                            <span className="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div className="card-action">
-                            <a href="#">This is a link</a>
-                            <a href="#">This is a link</a>
-                        </div>
+            <div className="row white container myCadre p10 center-align">
+                <h1>Pac Poule, le jeu qui rend fou</h1>
+                <p>
+                    Alors, vous êtes devenu fou ? Vous venez sur les pages d'erreur comme ça, quel courage !
+                </p>
+                <div className="row">
+                    <div className="col s12 m6">
+                        <a href="./play" className="btn red darken-2">Jouer à pacpoule</a>
                     </div>
+                    <div className="col s12 m6">
+                        <a href="./casestudy" className="btn cyan">Case-study du projet</a>
+                    </div>
+                </div>
+                <div className="col s12 center-align mb20">
+                    <img className="minimg" src={PicOne} alt="Image du jeu PacPoule"/>
+                </div>
+                <div className="col s12 center-align">
+                    <a href="./" className="btn cyan">Page d'acceuil</a>
                 </div>
             </div>
         ) // return

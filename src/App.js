@@ -18,7 +18,7 @@ export default class App extends Component {
           <BrowserRouter>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/game" component={Game} />
+              <Route path="/play" component={Game} />
               <Route path="/casestudy" component={Casestudy} />
               <Route component={NotFound} />
             </Switch>
